@@ -35,12 +35,32 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!--javaMail 相关依赖-->
+		<!--javaMail 相关依赖,前期手动实现的时候用到了，后期采用的时springboot全自动实现
 		<dependency>
 			<groupId>javax.mail</groupId>
 			<artifactId>mail</artifactId>
 			<version>1.4.7</version>
 		</dependency>
+		-->
+
+		<!--springboot邮件服务模块-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mail</artifactId>
+		</dependency>
+
+		<!--freemarker模板引擎，这里主要用来渲染模板邮件的一种方案-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-freemarker</artifactId>
+		</dependency>
+
+		<!--velocity模板引擎，这里主要用来渲染模板邮件的一种方案
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-velocity</artifactId>
+		</dependency>
+		-->
 	</dependencies>
 
 	<build>

@@ -1,0 +1,13 @@
+spring:
+  mail:
+    host: smtp.qq.com
+    username: 3095764372@qq.com
+    password: fatwmcjcvqpqdhcd
+    nickname: GG
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
